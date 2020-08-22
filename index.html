@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='./index.css' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+            <section class="navBar">
+                <ul>
+                    <li><a href='#Home'> Home </a></li>
+                    <li><a href='#Projects'> Projects </a></li>
+                    <li><a href='#Contact'> Contact </a></li>
+                
+                </ul>
+            </section>
+            <section id="Home" class="main-section">
+                <div>
+                    <div class='Intro'>
+                        <img src='./profile.jpg' class='myImage' alt='portrait' />
+                        <p>
+                            Hello, my name is Emmanuel Gonzalez and I'm currently a student at Cal State East Bay. I major
+                            in Computer Science and hoping to find a job/ internship where I can tests my current skills and enhances
+                            my knowledge. Currently learning more about Machine and Deep Learning on my own. Feel free to download my <a href="./Resume.pdf" style="color:bisque" > <b>resume</b> </a> if you'd like,
+                            and if you got any questions you can send me an email down <a href="#Contact" style="color:bisque">below</a>. 
+                            <br />
+                            Thank You!
+                        </p>
+                    </div>
+
+                    <br />
+                    <hr />
+                    <div class="myContent">
+                        <div class='subContent'>
+                            <h3>Interests</h3>
+                            <ul class="contList">
+                                <li>Machine Learning</li>
+                                <li>AI</li>
+                                <li>Web Dev</li>
+                                <li>PC Building</li>
+                                <li>Mathematics</li>
+
+                            </ul>
+                        </div>
+                        <div class='subContent'>
+                            <h3>Hobbies</h3>
+                            <ul class="contList">
+                                <li>Leather Crafting</li>
+                                <li>Watch Making</li>
+                                <li>Hiking</li>
+                                <li>Drawing</li>
+                                <li>DIY Projects</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="Projects" class="main-section proj_section">
+                <section class='projly'>
+
+                    <div class='big_box'>
+                        <div class='flip_inner'>
+                            <div class='flip_front'>
+                                <img src='./game.png' alt='connect 4 image' class='projImg'>
+                                
+                            </div>
+                            <div class='flip_back'>
+                                <p>
+                                    This is a proj built using React and consist of 3 games: 
+                                    connect4, tic-tac-toe, and a monty hall game. 
+                                    The game uses minimax decision making to try 
+                                    and beat you on both connect 4 and tic-tac-toe. 
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <a href="https://manny2384.github.io/manny2384games.github.io/" target='_blank'> Proj </a>
+                        <a href="https://github.com/manny2384/manny2384games.github.io" target='_blank'> Code </a>
+                    </div>
+
+                    <div class='big_box'>
+                        <div class='flip_inner'>
+                            <div class='flip_front'>
+                                <img src='./weather.png' alt='weather proj img' class='projImg'>
+                                
+                            </div>
+                            <div class='flip_back'>
+                                <p>
+                                    This is weather app is built with express for the api, 
+                                    it fetches current weather stats from the
+                                    <a href="https://openweathermap.org/api" target="_blank"><i>opeanweather api</i></a>
+                                    using an api key You can check it out at the proj link below, or 
+                                    checkout the code as well.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <a href="https://github.com/manny2384/weather.git" target='_blank'> Code </a>
+                        <a href='https://weatherproj-7f551.web.app/' target='_blank'> Proj </a>
+                    </div>
+
+                </section>
+            </section>
+
+            <section id="Contact" class="main-section">
+               <form class='gform' action='https://script.google.com/macros/s/AKfycbzLkPAJblQlzIUNCODCCsihh0BbH0WGdXoA6Rpy/exec' method='POST'>
+                   <fieldset>
+                       <legend>Get In Touch</legend>
+
+                       <label>First Name: <input name='name' type='text' style="margin-top: 1%;"></input> </label>
+
+                       <label>Last Name: <input name='color' type='text' style="margin-top: 1%;"></input> </label>
+                   
+                       <label style="margin-top: 1%;">Email: <input name='email' type='email' style="margin-top: 1%;"></input> </label>                    
+
+                        <div style="margin-top: 1%;">
+                            <label>Comments: <br />
+                            <textarea name='message'> </textarea>
+                            </label>
+                        </div>
+
+                        <input name='submit' value='submit' type='submit'> </input>
+
+                   </fieldset>
+               </form>
+            </section>
+      
+    </body>
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/emmanuel-gonzalez-05ab82193/" target="_blank" 
+                style="font-size:24px; padding:5px;" class='fa'>&#xf08c;</a></li>
+            <li><a href="https://github.com/manny2384" target="_blank" style="font-size:24px; padding:5px;" class='fa'>&#xf09b;</a></li>
+        </ul>
+    </footer>
+    <script src='./index.js'></script>
+    </html>
