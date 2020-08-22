@@ -215,6 +215,9 @@ footer ul li{
     .chat textarea{
         width: 90%;
     }
+    .main-section{
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -225,8 +228,8 @@ footer ul li{
     }
 
     .main-section{
-        width: 90%;
-        margin-left: 2.5%;
+        width: auto;
+        margin-left: 0;
     }
     
     .Intro{
