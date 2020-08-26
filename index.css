@@ -49,7 +49,7 @@ body{
     margin-left: 12.5%;
 }
 .main-section div{
-    margin-top: 2%;
+    margin-top: 3%;
 }
 /* home */
 
@@ -61,7 +61,8 @@ body{
 
 }
 .Intro{
-    height: 160px;
+    height: auto;
+    margin-bottom: 30px;
     width: 80%;
     margin-left: 10%;
 }
@@ -79,6 +80,12 @@ body{
     list-style: none;
     border-style: dotted;
 }
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 /*     Projects     */
 
 .proj_section {
@@ -148,6 +155,8 @@ form{
 form > fieldset{
     height: auto;
     margin-top: 2%;
+    display: grid;
+    justify-content: center;
 }
 form > fieldset > div{
     left: 25%;
@@ -155,7 +164,7 @@ form > fieldset > div{
 textarea{
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 40%;
+    width: 100%;
     height: 80px;
 }
 /*     Questions    */
@@ -195,6 +204,10 @@ footer ul li{
     padding: 5px;
 }
 
+#submit_id{
+    width: 100px;
+    height: 30px;
+}
 
 /*   phone */
 @media only screen and (max-width:500px){
@@ -206,24 +219,21 @@ footer ul li{
     .navBar ul li{
         width: 100%
     }
-    .cntctForm fieldset{
-        height: 100%;
-    }
     .cntctForm fieldset div textarea{
         width: 90%;
     }
     .chat textarea{
-        width: 90%;
+        width: auto;
     }
     .main-section{
         margin-left: 0;
     }
+
 }
 
 @media only screen and (max-width: 800px){
     fieldset{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
         text-align: center;
     }
 
@@ -236,6 +246,10 @@ footer ul li{
         width: 90%;
         margin-left: 0;
         height: auto;
+    }
+
+    form > fieldset >div{
+        left: 0;
     }
 
 }
