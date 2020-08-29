@@ -74,6 +74,12 @@ html{
 .main_home div{
     padding: 25%;
     font-size: 18px;
+    text-align: center;
+}
+.main_home div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 55px;
 }
 .main_home div a{
     padding: 40%;
@@ -99,6 +105,7 @@ html{
 .my_interests figure img{
     width: 130px;
     height: 100px;
+    padding: 5px;
 }
 .my_interests figure figcaption{
     font-size: 10px;
@@ -235,12 +242,6 @@ footer a{
         width: 80%;
         padding: 0 10% 0 10%;
     }
-    .main_contact form input{
-
-    }
-    .main_contact form textarea{
-
-    }
 }
 
 @media (min-width: 1001px) and (max-width:1200px){
@@ -251,8 +252,16 @@ footer a{
     .main_contact form input{
         height: 50px;
     }
-    .main_contact form textarea{
 
+    .my_nav_bar{
+        text-align:center;
+    }
+
+}
+
+@media(min-width: 1001px) and (max-width: 1200px) and (max-height: 600px) {
+    .main_about, .main_projects, .main_home, .main_contact{
+        height: auto;
     }
 }
 
@@ -282,11 +291,11 @@ footer a{
     .navBar{
         height: 40px;
     }
-
-}
-
-@media(max-height: 400px){
-    .main_contact, .main_about, .main_home, .main_projects{
-        height: auto;
+    .my_nav_bar{
+        text-align:center;
+    }
+    .my_interests figure img{
+        width: 250px;
+        height: 200px;
     }
 }
