@@ -1,8 +1,9 @@
 window.onload = () =>{
+    // used to display and hide nave bar
     let askBtn = document.getElementById('submitQuestion');
     let chatArea = document.getElementById('chatArea');
     chatArea .append('Hello, Is there anything I can help you with? ');
-    
+
     askBtn.onclick = () => {
         let question = document.getElementById('yourQ').value;
         if(!question)

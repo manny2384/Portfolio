@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: white;
+    width: 100vw;
+}
+body{
+    width: 100vw;
+    background-color:rgb(124, 117, 107);
+}
+.navBar{
+    height: 10%;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-image: linear-gradient(rgb(190, 179, 164), rgb(124, 117, 107));
+    z-index: 9999;
+}
+.navBar ul{
+    list-style-type: none;
+}
+.navBar ul li{
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+}
+.navBar ul li a{
+   color: white;
+   text-decoration: none;
+}
+.navBar ul li a:hover{
+    background-color: slategray;
+}
+
+/** Main Section **/
+
+.main-section{
+    padding: 1em;
+    height: auto;
+    background-color: rgb(40, 43, 42);
+    color: white;
+    width: 75%; 
+    margin-left: 12.5%;
+}
+.main-section div{
+    margin-top: 3%;
+}
+/* home */
+
+.myImage{
+    height: 150px;
+    width: 150px;
+    float: left;
+    padding-right: 1%;
+
+}
+.Intro{
+    height: auto;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+.myContent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-style: solid;
+    background-color: white;
+}
+.subContent{
+    text-align: center;
+    color: rgb(39, 13, 13);
+}
+.contList{
+    list-style: none;
+    border-style: dotted;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*     Projects     */
+
+.proj_section {
+    text-align: center;
+}
+.projly{
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+}
+.big_box{
+    display: inline-block;
+    perspective: 1000px;
+    width: 400px;
+    height: 400px;
+}
+.flip_inner{  
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+.flip_inner img{
+    height: 100%;
+    width: 100%;
+}
+.flip_inner a{
+    margin: 2px;
+    color: white;
+}
+.big_box:hover .flip_inner{
+    transform: rotateY(180deg);
+}
+.flip_front, .flip_back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+.flip_back {
+    transform: rotateY(180deg);
+    background-image: linear-gradient(rgb(190, 179, 164), rgb(40, 43, 42));
+    text-align: center;
+}
+.flip_back p{
+    width: 100%;
+    height: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 25px;
+}
+.big_box a{
+    color: white;
+}
+.big_box a:hover{
+    color: blue;
+}
+/*      Contact     */
+form{
+    text-align: center;
+}
+form > fieldset{
+    height: auto;
+    margin-top: 2%;
+    display: grid;
+    justify-content: center;
+    font-size: 26px;
+}
+form > fieldset > div{
+    left: 25%;
+}
+textarea{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    height: 80px;
+}
+/*     Questions    */
+.chat{
+    text-align: center;
+    padding-bottom: 1%;
+}
+.conversation{
+    height: 50vh;
+    width: 40%;
+}
+
+.chat-container{
+    width: 80%;
+    height: 20%;
+    padding: 1em;
+    background-color: mediumturquoise;
+}
+
+
+/*  Footer  */
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+footer ul{
+    list-style-type: none;
+    height: auto;
+}
+footer ul li{
+    display: inline;
+
+}
+.social{
+    font-size: 25px;
+    padding: 5px;
+}
+
+#submit_id{
+    width: 100px;
+    height: 30px;
+}
+
+/*   phone */
+@media only screen and (max-width:500px){
+    .navBar ul{ 
+        width: 100%;   
+        display: grid;
+        grid-template-columns: auto auto auto;     
+    }
+    .navBar ul li{
+        width: 100%
+    }
+    .cntctForm fieldset div textarea{
+        width: 90%;
+    }
+    .chat textarea{
+        width: auto;
+    }
+    .main-section{
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    fieldset{
+        display: grid;
+        text-align: center;
+    }
+
+    .main-section{
+        width: auto;
+        margin-left: 0;
+    }
+    
+    .Intro{
+        width: 90%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    form > fieldset >div{
+        left: 0;
+    }
+
+}

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
 <html>
     <head>
         <meta charset="UTF-8" >
@@ -9,43 +10,158 @@
     <body>
 
             <section class="navBar">
-                <ul>
-                    <li><a href='#Home'> Home </a></li>
-                    <li><a href='#Projects'> Projects </a></li>
-                    <li><a href='#Contact'> Contact </a></li>
-                
-                </ul>
+                <a href="#Home" > <img src='./pictures/logo.jpg' /> </a>
+                <button id='nav_show_btn' onclick="show_nav()"> &#8801; </button>
+                <div class='my_nav_bar'>
+
+                    <a href='#Home' class='my_nav_elem' style="text-decoration: none; color: whitesmoke;"> Home </a>
+                    <a href='#About' class='my_nav_elem' style="text-decoration: none; color: whitesmoke;"> About </a>
+                    <a href='#Projects' class='my_nav_elem' style="text-decoration: none; color: whitesmoke;"> Projects </a>
+                    <a href='#Contact' class='my_nav_elem' style="text-decoration: none; color: whitesmoke;"> Contact </a>
+                    
+                </div>
             </section>
-            <section id="Home" class="main-section">
+
+            <section id="Home" class="main_home">
                 <div>
+                    
+                        Hello, my name is Emmanuel Gonzalez, and I'm currently pursuing a B.S in Computer Science at Cal State East Bay.
+                        Looking for an internship or job in fullstack development.
+
+                    <br />
+                    <a href="#About" style="color:black;"> &#10162; </a>
+                </div>
+    
+            </section>
+            <section id="About" class="main_about">
+                <h2 class='section_name'> ABOUT </h2>
+                <div class="my_interests">
+                    <figure>
+                       <img src="./pictures/aimlpic.png" alt="Picture of head with neurons" />
+                       <br />
+                       <figcaption> Have taken up a few AI/ ML Projects through Codecademy </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./pictures/client_server.gif" alt="Picture of head with neurons" />
+                        <figcaption> Need a front/ back-end dev? I can build you a client and/or api </figcaption>
+                     </figure>
+                     <figure>
+                        <img src="./pictures/responsive.png" alt="Picture of head with neurons" />
+                        <figcaption> Want it available and visually appealing on many platforms? I got you with a quick response. </figcaption>
+                     </figure>
+                     <figure>
+                        <img src="./pictures/aimlpic.png" alt="Picture of head with neurons" />
+                        <figcaption> Have taken up a few AI/ ML Projects through Codecademy  </figcaption>
+                     </figure>
+                </div>
+                    
+                <div class="about_skills">
+                    <h3> Languages </h3>
+                    <ul>
+                        <li> HTML/CSS </li>
+                        <li> JavaScript </li>
+                        <li> Node.js </li>
+                        <li> Python </li>
+                        <li> C/C++ </li>
+                        <li> React </li>
+                        <li> Java </li>
+                        <li> SQL</li>
+                        
+                    </ul>
+                </div>
+
+            </section>
+
+            <section id="Projects" class="main_projects">
+                <h2 class='section_name'> PROJECTS </h2>
+                <div class='big_box'>
+                    <div class='flip_inner'>
+                        <div class='flip_front'>
+                            <img src='./pictures/game.png' alt='connect 4 image' class='projImg'>
+                            
+                        </div>
+                        <div class='flip_back'>
+                            <p>
+                                This is a proj built using React and consist of 3 games: 
+                                connect4, tic-tac-toe, and a monty hall game. 
+                                The game uses minimax decision making to try 
+                                and beat you on both connect 4 and tic-tac-toe. 
+                            
+                                <a href="https://manny2384.github.io/manny2384games.github.io/" target='_blank'> Proj </a>
+                                <a href="https://github.com/manny2384/manny2384games.github.io" target='_blank'> Code </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class='big_box'>
+                    <div class='flip_inner'>
+                        <div class='flip_front'>
+                            <img src='./pictures/weather.png' alt='weather proj img' class='projImg'>
+                            
+                        </div>
+                        <div class='flip_back'>
+                            <p>
+                                This is weather app is built with express for the api, 
+                                it fetches current weather stats from the
+                                <a href="https://openweathermap.org/api" target="_blank"><i>opeanweather api</i></a>
+                                using an api key. You can check it out at the proj link below, or 
+                                checkout the code as well.
+                                
+                                <a href="https://github.com/manny2384/weather.git" target='_blank'> Code </a>
+                                <a href='https://weatherproj-7f551.web.app/' target='_blank'> Proj </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="Contact" class="main_contact">
+                <h2 class='section_name'> CONTACT </h2>
+                <form class='gform' action='https://script.google.com/macros/s/AKfycbzLkPAJblQlzIUNCODCCsihh0BbH0WGdXoA6Rpy/exec' method='POST'>
+                    <fieldset>
+                        <legend> Your Info </legend>
+                        <div>
+                            <input name='name' type='text' style="margin-top: 1%;" placeholder="First name..."></input>
+ 
+                            <input name='color' type='text' style="margin-top: 1%;" placeholder="Last name..."></input> 
+    
+                            <input name='email' type='email' style="margin-top: 1%;" placeholder="Email..."></input> 
+                            
+                            <textarea name='message' type="text" style="margin-top: 1%;" placeholder="Enter message"></textarea>
+                            
+                            <input id='submit_id' name='submit' value='Send Email' type='submit'> </input>
+     
+                        </div>
+                    </fieldset>
+                </form>
+             </section>
+
+
+             <footer>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/emmanuel-gonzalez-05ab82193/" target="_blank" 
+                        style="font-size:24px; padding:5px;" class='fa'>&#xf08c;</a></li>
+                    <li><a href="https://github.com/manny2384" target="_blank" style="font-size:24px; padding:5px;" class='fa'>&#xf09b;</a></li>
+                </ul>
+            </footer>
+            <!---
+            
+                                <div>
+
                     <div class='Intro'>
                         <img src='./profile.jpg' class='myImage' alt='portrait' />
-                        <p>
-                            Hello, my name is Emmanuel Gonzalez and I'm currently pursuing a B.S in Computer Science at Cal State East Bay.
-                            Looking for an internship, possibly job, where I can test my current skills and enhance
-                            my knowledge. At the moment, I'm also learning more about Machine and Deep Learning if you're looking for someone in a relative field.
-                            Please feel free to download my 
-                            <a href="./Resume.pdf" style="color:bisque" > <b>resume</b> </a> ,
-                            and if you got any questions, you can send me an email down <a href="#Contact" style="color:bisque">below</a>. 
-                            <br />
-                            <h3>Thank You!</h3>
-                        </p>
+                        <a href="./Resume.pdf" style="color:bisque" > resume </a> ,
+                        and if you got any questions, you can send me an email down <a href="#Contact" style="color:bisque">below</a>. 
+                
                     </div>
 
                     <br />
                     <hr />
                     <div class="myContent">
-                        <div class='subContent'>
-                            <h3>Interests</h3>
-                            <ul class="contList">
-                                <li>Machine Learning</li>
-                                <li>AI</li>
-                                <li>Web Dev</li>
-                                <li>PC Building</li>
-                                <li>Mathematics</li>
-
-                            </ul>
-                        </div>
                         <div class='subContent'>
                             <h3>Hobbies</h3>
                             <ul class="contList">
@@ -61,55 +177,6 @@
 
                 </div>
 
-            </section>
-
-            <section id="Projects" class="main-section proj_section">
-                <section class='projly'>
-
-                    <div class='big_box'>
-                        <div class='flip_inner'>
-                            <div class='flip_front'>
-                                <img src='./game.png' alt='connect 4 image' class='projImg'>
-                                
-                            </div>
-                            <div class='flip_back'>
-                                <p>
-                                    This is a proj built using React and consist of 3 games: 
-                                    connect4, tic-tac-toe, and a monty hall game. 
-                                    The game uses minimax decision making to try 
-                                    and beat you on both connect 4 and tic-tac-toe. 
-                                </p>
-                            </div>
-                        </div>
-                        <br />
-                        <a href="https://manny2384.github.io/manny2384games.github.io/" target='_blank'> Proj </a>
-                        <a href="https://github.com/manny2384/manny2384games.github.io" target='_blank'> Code </a>
-                    </div>
-
-                    <div class='big_box'>
-                        <div class='flip_inner'>
-                            <div class='flip_front'>
-                                <img src='./weather.png' alt='weather proj img' class='projImg'>
-                                
-                            </div>
-                            <div class='flip_back'>
-                                <p>
-                                    This is weather app is built with express for the api, 
-                                    it fetches current weather stats from the
-                                    <a href="https://openweathermap.org/api" target="_blank"><i>opeanweather api</i></a>
-                                    using an api key. You can check it out at the proj link below, or 
-                                    checkout the code as well.
-                                    
-                                </p>
-                            </div>
-                        </div>
-                        <br />
-                        <a href="https://github.com/manny2384/weather.git" target='_blank'> Code </a>
-                        <a href='https://weatherproj-7f551.web.app/' target='_blank'> Proj </a>
-                    </div>
-
-                </section>
-            </section>
 
             <section id="Contact" class="main-section">
                <form class='gform' action='https://script.google.com/macros/s/AKfycbzLkPAJblQlzIUNCODCCsihh0BbH0WGdXoA6Rpy/exec' method='POST'>
@@ -139,14 +206,38 @@
                    </fieldset>
                </form>
             </section>
-      
-    </body>
-    <footer>
+            
+
+                <footer>
         <ul>
             <li><a href="https://www.linkedin.com/in/emmanuel-gonzalez-05ab82193/" target="_blank" 
                 style="font-size:24px; padding:5px;" class='fa'>&#xf08c;</a></li>
             <li><a href="https://github.com/manny2384" target="_blank" style="font-size:24px; padding:5px;" class='fa'>&#xf09b;</a></li>
         </ul>
     </footer>
+            -->
+      
+    </body>
+
     <script src='./index.js'></script>
+    <script>
+        function show_nav(){
+            let elements = document.getElementsByClassName('my_nav_elem');
+            for(let i=0; i<elements.length; i++){
+                elements[i].style.display = elements[i].style.display === "grid" ? "none" : "grid";
+                if(i > 0)
+                    elements[i].style.opacity = 0.0;
+            }
+
+            setTimeout(() => {
+                elements[1].style.opacity = 1.0;
+            }, 30);
+            setTimeout(() => {
+                elements[2].style.opacity = 1.0;
+            }, 60);
+            setTimeout(() => {
+                elements[3].style.opacity = 1.0;
+            }, 100);
+        }
+    </script>
     </html>
