@@ -301,7 +301,7 @@ footer a{
 }
 
 
-@media(max-height: 350px) {
+@media(max-height: 400px) {
     .main_about, .main_projects, .main_home, .main_contact{
         height: auto;
     }
