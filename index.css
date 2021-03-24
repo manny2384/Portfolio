@@ -195,7 +195,7 @@ html{
     border: 5px solid rgb(56, 81, 95);
 }
 .main_contact form textarea{
-    height: 50px;
+    height: 300px;
     margin-bottom: 5px;
     border: 5px solid rgb(56, 81, 95);
 }
